@@ -113,11 +113,14 @@ int main(){
         Sleep(500);
         system("cls");
 
-        if(positionA <= 0){
-            cout << "\tHA GANADO EL AZUL!!!";
+        if(positionA <= 0 && positionR <= 0){
+            cout << "\tHAN QUEDADO EMPATE!!!";
             bandera = true;
         }else  if(positionR <= 0){
             cout << "\tHA GANADO EL ROJO!!!";
+            bandera = true;
+        }else  if(positionA <= 0){
+            cout << "\tHA GANADO EL AZUL!!!";
             bandera = true;
         }else{
             bandera = false;
